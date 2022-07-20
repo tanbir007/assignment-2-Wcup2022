@@ -1,0 +1,457 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,300;1,400&family=Zilla+Slab:ital,wght@1,300&display=swap');
+body{
+    background-color: rgba(224, 66, 27, 0.405);
+    font-family: 'Poppins', sans-serif;
+    margin: 0 auto;
+  
+}
+.all-section{
+    margin: 40px 140px;
+}
+.header-container{
+   
+    display: flex;
+    /* background-color: #161616; */
+   padding: 50px 50px 80px;
+    justify-content:center;
+    align-items:center;   
+    border-radius: 20px;
+    background-image: url(./Images/back1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0s;
+
+
+    animation-name: football;
+    animation-direction: alternate-reverse;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+    animation-duration: 30s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    
+    
+}
+@keyframes football{
+    0%{
+        background-image: url(Images/back2.jpg);
+    }
+    20%{
+        background-image: url(Images/back1.png);
+    }
+    40%{
+        background-image: url(Images/back10.png);
+    }
+    60%{
+        background-image: url(Images/back8.jpg);
+    }
+    80%{
+        background-image: url(Images/back9.jpg);
+    }
+    100%{
+        background-image: url(Images/back5.jpg);
+    }
+}
+.banner{
+    /* border:1px solid yellow; */
+    margin-left: 24px;
+    text-align:justify;
+    
+}
+
+.banner p{
+    color:rgb(255, 255, 255);
+    font-weight: 500;
+    font-size: 20px;
+}
+
+h1{
+    font-size: 3em;
+    animation:text-anime 20s infinite alternate;
+    
+}
+
+@keyframes text-anime{
+    0%{
+        color:yellow;
+    }
+    20%{
+        color:rgb(255, 255, 255);
+    }
+    40%{
+        color:rgb(0, 255, 68);
+    }
+    60%{
+        color:rgb(255, 234, 0);
+    }
+    80%{
+        color:rgba(255, 0, 0, 0.712);
+    }
+    100%{
+        color:rgb(242, 255, 0);
+    }
+}
+.banner button{
+    
+    background-color:#DD0000;
+   
+    padding:10px;
+    border-radius: 5px;
+    color:white;
+    cursor: pointer;
+    font-size: 18px;
+}
+.banner button:hover{
+    background-color: rgb(16, 72, 63);
+    color:rgb(252, 231, 0);
+   }
+/* This line took me more than my whole  assignment time did */ 
+.banner img{
+    
+   position:relative;
+          
+    top:90px;          
+
+}
+/* .banner img:hover{
+
+    transition: ease-out 1s;
+} */
+
+/* transfer section */
+.transfer-container{
+    display: grid;
+    grid-template-columns: 25% 75%;
+   
+    margin-top: 50px;
+   
+}
+.transfer{
+    margin-right: 24px;
+    
+    
+}
+.transfer-left{
+    display: flex;
+    flex-direction:column;
+    background-color: #161616;
+    padding:20px;
+    border-radius: 10px;
+    
+}
+.transfer-left button {
+    
+    margin-top: 20px;
+    border-radius: 10px;
+    padding:10px;
+   
+}
+.transfer-left button a{
+    text-decoration: none;
+    color:rgb(0, 0, 0)
+
+}
+.transfer-left button:hover{
+ background-color: goldenrod;
+ cursor: pointer;
+}
+
+
+#btn{
+    background-color:#DD0000;
+    color:white;
+}
+#btn:hover{
+    background-color:goldenrod;
+    color:red;
+    font-weight:600;
+}
+.transfer-grid {
+    
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 10px;
+    
+}
+.transfer-grid img{
+    width: 100%;
+}
+.transfer-content{
+    border:  2px solid #00000021;
+    border-top:none;
+    border-radius: 5px;   
+   padding-left: 5px;
+   padding-right: 5px;
+   padding-bottom: 5px;
+    box-shadow: 2px 2px #00000007;
+    background-color: rgba(0, 217, 250, 0.082);
+}
+.transfer-content p{
+    
+    color:black;
+    text-align:justify;
+    font-weight: 600;
+  
+
+
+}
+.transfer-btn{
+    background-color: #edbe00;
+    border-radius: 5px;
+    border:.5px solid #000000;
+    padding: 8px;
+    box-shadow:0 0 2px 2px#0000004e;
+
+    
+}
+.transfer-btn:hover{
+    background-color:rgb(142, 236, 1);
+    
+    transition: ease-out .5s;
+}
+.transfer-time{
+    display: flex;
+    justify-content:flex-start;
+
+}
+.transfer-time span{
+    margin-right: 30px;
+}
+.transfer-time span i{
+    margin-right: 10px;
+}
+ .upcoming-time{
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.upcoming-match{
+    display: flex;
+}
+.upcoming-img img{
+    width: 98px;;
+}
+.upcoming-img{
+    display: flex;
+    width: 100%;
+    padding: 5px;
+} 
+#upcomming-btn{
+    background-color: rgb(255, 0, 0);
+    color: white
+}
+
+/* footer */
+
+
+.footer-container {
+  
+    padding-top: 10px;
+    height: 100%;
+    margin-top: 5%;
+   
+    background-color: black;
+   
+}
+
+.footer-container h1{
+    text-align: center;
+    color:red;
+    font-family: 'Lobster', cursive;
+}
+.footer-container p{
+   text-align: center;
+    color:white;
+    font-size: 20px;
+}
+#touch{
+    text-decoration:overline;
+    
+}
+.contact{
+    display:flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.social-icon{
+    display: flex;
+    justify-content:center;
+    background-color: rgba(10, 50, 50, 0.61);
+}
+.social-icon p{
+    margin-left: 20px;
+    width: 50px;
+    text-decoration: none;
+    
+   
+}
+.social-icon p:hover{
+    
+    background-color: rgba(32, 218, 44, 0.479);
+    border-radius:20px;
+}
+.fa-brands{
+    color:rgb(255, 255, 255);
+}
+
+.btn-view{
+    background-color:#edbd00;
+    padding: 12px;
+    border-radius: 10px;
+    width: 200px;
+    margin-right: 200px;
+    
+}
+.view-all{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin-top: 20px;
+}
+
+/* Mobile Version */
+
+@media only screen  and (max-width:480px) {
+   
+    .header-container{
+        display: flex;
+        flex-wrap: wrap;
+       
+       border-radius:0 ;
+       
+
+        background-image:none;
+        transition:none;
+        animation:none;
+        background-color: #161616;
+      
+       
+    }
+    .all-section{
+        margin:0 auto;
+        
+    }
+   .banner button:hover{
+    background-color: goldenrod;
+   }
+   .banner button{
+    margin-left: 20%;
+    background-color:#DD0000;
+    width:200px;
+    padding:15px;
+    border-radius: 5px;
+    color:white;
+    cursor: pointer;
+    font-size: 24px;
+}
+    
+    .transfer-left{
+        display: flex;
+        flex-direction:column;
+        
+        justify-content: center;
+        background-color:rgba(255, 217, 2, 0.366);
+        
+
+    }
+    .transfer-left button{
+        margin-left: 10px;
+    }
+    .transfer-container{
+        margin-left: 20px;
+        display: flex;
+        flex-direction:column;
+       
+    }
+    .transfer{
+        margin-top: 10px;
+    }
+    .transfer-grid{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .view-all{
+        display: none;
+    }
+    .contact{
+        display: flex;
+        flex-direction:column;
+    }
+   
+}
+
+/* tablet version */
+
+@media only screen and (min-width: 481px) and (max-width:768px) {
+    
+    .header-container{
+        display: flex;
+        /* flex-wrap: wrap; */
+       
+       border-radius:0 ;
+      
+
+        background-image:none;
+        transition:none;
+        /* animation:none; */
+        background-color: #161616;
+      
+       
+    }
+    .banner img{
+        position:relative;        
+        top:185px; 
+    }
+    .all-section{
+        margin:0 auto;
+        
+    }
+   .banner button:hover{
+    background-color: goldenrod;
+   }
+   .banner h1{
+    text-align:start;
+   }
+    
+    .transfer-left{
+        display: flex;
+        flex-direction:row;
+        
+        justify-content: center;
+        background-color:rgba(255, 217, 2, 0.469);
+        
+
+    }
+    .transfer-left button{
+        margin-left: 10px;
+    }
+    .transfer-container{
+        margin-left: 20px;
+        display: flex;
+        flex-direction:column;
+       
+    }
+   
+    .transfer{
+        margin-top: 10px;
+    }
+    .transfer-grid{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .btn-view{
+       margin: 0;
+        
+    }
+   
+}
+
+@media only screen and (min-width: 769px) and (max-width:1280px) {
+    .view-all{
+        display: none;
+    }
+}
